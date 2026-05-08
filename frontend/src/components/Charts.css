@@ -1,0 +1,93 @@
+.chart-container {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  height: 100%;
+}
+
+.chart-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #1f2937;
+  margin: 0 0 16px 0;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.chart-loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 300px;
+  background: white;
+  border-radius: 12px;
+  color: #6b7280;
+  font-size: 0.95rem;
+}
+
+/* Account Usage specific styles */
+.account-usage-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.account-usage-item {
+  background: #f9fafb;
+  border-radius: 8px;
+  padding: 16px;
+  transition: background-color 0.2s;
+}
+
+.account-usage-item:hover {
+  background: #f3f4f6;
+}
+
+.account-usage-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.account-name {
+  font-weight: 600;
+  color: #1f2937;
+  font-size: 0.95rem;
+}
+
+.account-transactions {
+  font-size: 0.85rem;
+  color: #6b7280;
+}
+
+.account-usage-bar-container {
+  height: 8px;
+  background: #e5e7eb;
+  border-radius: 4px;
+  overflow: hidden;
+  margin-bottom: 8px;
+}
+
+.account-usage-bar {
+  height: 100%;
+  background: linear-gradient(90deg, #6366f1, #8b5cf6);
+  border-radius: 4px;
+  transition: width 0.5s ease-out;
+}
+
+.account-usage-footer {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.8rem;
+  color: #6b7280;
+}
+
+.account-volume {
+  font-weight: 500;
+}
+
+.account-last-used {
+  font-style: italic;
+}

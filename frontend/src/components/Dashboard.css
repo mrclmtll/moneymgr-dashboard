@@ -1,0 +1,134 @@
+.dashboard {
+  min-height: 100vh;
+  background: #f3f4f6;
+  padding: 24px;
+}
+
+/* Header */
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.dashboard-header h1 {
+  margin: 0;
+  font-size: 1.75rem;
+  color: #1f2937;
+}
+
+.mock-badge {
+  background: #fef3c7;
+  color: #92400e;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+/* Summary Cards */
+.summary-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.summary-card {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  border-left: 4px solid #6b7280;
+}
+
+.summary-card.income {
+  border-left-color: #22c55e;
+}
+
+.summary-card.expenses {
+  border-left-color: #ef4444;
+}
+
+.summary-card.balance {
+  border-left-color: #3b82f6;
+}
+
+.summary-card.transactions {
+  border-left-color: #8b5cf6;
+}
+
+.summary-label {
+  font-size: 0.85rem;
+  color: #6b7280;
+  text-transform: uppercase;
+  letter-spacing: 0.025em;
+  margin-bottom: 4px;
+}
+
+.summary-value {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #1f2937;
+}
+
+/* Charts Grid */
+.charts-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.chart-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 24px;
+}
+
+.chart-col-1 {
+  min-width: 0;
+}
+
+.chart-col-2 {
+  grid-column: 1 / -1;
+  min-width: 0;
+}
+
+/* Footer */
+.dashboard-footer {
+  margin-top: 40px;
+  text-align: center;
+  color: #6b7280;
+  font-size: 0.85rem;
+}
+
+.dashboard-footer code {
+  background: #e5e7eb;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-family: monospace;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .dashboard {
+    padding: 16px;
+  }
+
+  .chart-row {
+    grid-template-columns: 1fr;
+  }
+
+  .dashboard-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .summary-cards {
+    grid-template-columns: 1fr;
+  }
+}
